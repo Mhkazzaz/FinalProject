@@ -109,3 +109,4 @@ C:\Users\mhkaz\source\repos\FinalProject\FinalProject\obj\Debug\FinalProject.pdb
 C:\Users\mhkaz\source\repos\FinalProject\FinalProject\obj\Debug\FinalProject.Migrations.InitialCreate.resources
 C:\Users\mhkaz\source\repos\FinalProject\FinalProject\obj\Debug\FinalProject.csproj.GenerateResource.cache
 C:\Users\mhkaz\source\repos\FinalProject\FinalProject\obj\Debug\FinalProject.Migrations.InitialCreate1.resources
+C:\Users\mhkaz\source\repos\FinalProject\FinalProject\obj\Debug\FinalProject.Migrations.SecondCreate.resources

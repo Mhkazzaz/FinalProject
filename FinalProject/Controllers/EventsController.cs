@@ -47,7 +47,7 @@ namespace FinalProject.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,date,type,attendees,duration")] Event @event)
+        public ActionResult Create([Bind(Include = "Id,date,partyType,attendees,duration")] Event @event)
         {
             if (ModelState.IsValid)
             {
@@ -79,7 +79,7 @@ namespace FinalProject.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,date,type,attendees,duration")] Event @event)
+        public ActionResult Edit([Bind(Include = "Id,date,partyType,attendees,duration")] Event @event)
         {
             if (ModelState.IsValid)
             {

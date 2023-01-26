@@ -184,6 +184,10 @@
     <Compile Include="Migrations\202301242207241_InitialCreate1.designer.cs">
       <DependentUpon>202301242207241_InitialCreate1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202301242326359_SecondCreate.cs" />
+    <Compile Include="Migrations\202301242326359_SecondCreate.designer.cs">
+      <DependentUpon>202301242326359_SecondCreate.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Event.cs" />
@@ -197,6 +201,7 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\jquery.datetimepicker.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -209,6 +214,7 @@
     <Content Include="Scripts\jquery-3.4.1.slim.js" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.datetimepicker.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
@@ -276,6 +282,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202301242207241_InitialCreate1.resx">
       <DependentUpon>202301242207241_InitialCreate1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202301242326359_SecondCreate.resx">
+      <DependentUpon>202301242326359_SecondCreate.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

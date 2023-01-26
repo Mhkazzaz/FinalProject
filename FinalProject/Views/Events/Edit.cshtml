@@ -10,7 +10,7 @@
 @using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()
-    
+
     <div class="form-horizontal">
         <h4>Event</h4>
         <hr />
@@ -20,16 +20,20 @@
         <div class="form-group">
             @Html.LabelFor(model => model.date, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.date, new { htmlAttributes = new { @class = "form-control" } })
+                <link href="~/Content/jquery.datetimepicker.css" rel="stylesheet" />
+                @*@Html.EditorFor(model => model.date, new { htmlAttributes = new { @class = "form-control" } })*@
+                @Html.TextBoxFor(m => m.date, new { @class = "form-control" })
                 @Html.ValidationMessageFor(model => model.date, "", new { @class = "text-danger" })
             </div>
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.type, htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.partyType, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.type, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.type, "", new { @class = "text-danger" })
+                @Html.DropDownListFor(m => m.partyType,
+                new SelectList(Enum.GetValues(typeof(FinalProject.Models.PartyType))),
+                "Select Party Type")
+                @Html.ValidationMessageFor(model => model.partyType, "", new { @class = "text-danger" })
             </div>
         </div>
 
@@ -63,4 +67,14 @@
 
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")
+    <script src="~/Scripts/jquery.datetimepicker.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#date').datetimepicker({
+                format: 'd-M-y h:m:s A',
+                // { 01-Jan -01 12:00:00 AM }
+                value: new Date()
+            });
+        });
+    </script>
 }

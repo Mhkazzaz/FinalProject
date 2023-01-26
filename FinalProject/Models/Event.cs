@@ -11,10 +11,19 @@ namespace FinalProject.Models
         [Key]
         public int Id { get; set; }
         public DateTime date { get; set; }
-        public string type { get; set; }
+        public PartyType partyType { get; set; }
         public int attendees { get; set; }
+
         [Range(1, 8)]
         public int duration { get; set; }
 
+    }
+     
+    public enum PartyType
+    {
+        Dinner,
+        Birthday,
+        Cocktail,
+        Business
     }
 }
