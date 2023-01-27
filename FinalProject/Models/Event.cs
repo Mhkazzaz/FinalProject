@@ -10,11 +10,18 @@ namespace FinalProject.Models
     {
         [Key]
         public int Id { get; set; }
+
+        [Display(Name = "Date")]
         public DateTime date { get; set; }
+
+        [Display(Name = "Party Type")]
         public PartyType partyType { get; set; }
+
+        [Display(Name = "Number of Attendees")]
         public int attendees { get; set; }
 
-        [Range(1, 8)]
+        [Display(Name = "Duration")]
+        [Range(1, 4)]
         public int duration { get; set; }
 
     }

@@ -70,9 +70,23 @@
     <script src="~/Scripts/jquery.datetimepicker.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
+            const maxDate = new Date();
+            maxDate.setMonth(maxDate.getMonth() + 4);
+
+            const minTime = new Date();
+            minTime.setHours(7);
+
+            const maxTime = new Date();
+            maxTime.setHours(20);
+
             $('#date').datetimepicker({
-                format: 'd-M-y h:m:s A',
-                // { 01-Jan -01 12:00:00 AM }
+
+                minTime: minTime,
+                maxTime: maxTime,
+                maxDate: maxDate,
+                minDate: '-1969/12/31',
+                format: 'd-M-y h:00 A',
+                // { 01-Jan - 01 12: 00: 00 AM }
                 value: new Date()
             });
         });
