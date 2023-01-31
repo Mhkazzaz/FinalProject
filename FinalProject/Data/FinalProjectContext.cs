@@ -20,5 +20,9 @@ namespace FinalProject.Data
         }
 
         public System.Data.Entity.DbSet<FinalProject.Models.Event> Events { get; set; }
+
+        public System.Data.Entity.DbSet<FinalProject.Models.Role> Roles { get; set; }
+
+        public System.Data.Entity.DbSet<FinalProject.Models.User> Users { get; set; }
     }
 }

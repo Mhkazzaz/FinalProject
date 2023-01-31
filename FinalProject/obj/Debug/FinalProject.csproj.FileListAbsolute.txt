@@ -111,3 +111,5 @@ C:\Users\mhkaz\source\repos\FinalProject\FinalProject\obj\Debug\FinalProject.csp
 C:\Users\mhkaz\source\repos\FinalProject\FinalProject\obj\Debug\FinalProject.Migrations.InitialCreate1.resources
 C:\Users\mhkaz\source\repos\FinalProject\FinalProject\obj\Debug\FinalProject.Migrations.SecondCreate.resources
 C:\Users\mhkaz\source\repos\FinalProject\FinalProject\obj\Debug\FinalProject.Migrations.maxduration4.resources
+C:\Users\mhkaz\source\repos\FinalProject\FinalProject\obj\Debug\FinalProject.Migrations.AddingRoleModels.resources
+C:\Users\mhkaz\source\repos\FinalProject\FinalProject\obj\Debug\FinalProject.Migrations.Roles.resources

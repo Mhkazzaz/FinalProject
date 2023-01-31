@@ -172,6 +172,8 @@
     <Compile Include="Controllers\EventsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\RolesController.cs" />
+    <Compile Include="Controllers\UsersController.cs" />
     <Compile Include="Data\FinalProjectContext.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -192,13 +194,22 @@
     <Compile Include="Migrations\202301270455211_max-duration-4.designer.cs">
       <DependentUpon>202301270455211_max-duration-4.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202301312220120_AddingRoleModels.cs" />
+    <Compile Include="Migrations\202301312220120_AddingRoleModels.designer.cs">
+      <DependentUpon>202301312220120_AddingRoleModels.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202301312233407_Roles.cs" />
+    <Compile Include="Migrations\202301312233407_Roles.designer.cs">
+      <DependentUpon>202301312233407_Roles.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\Employee.cs" />
     <Compile Include="Models\Event.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Role.cs" />
     <Compile Include="Models\User.cs" />
+    <Compile Include="Models\UserRoles.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -265,6 +276,16 @@
     <Content Include="Views\Events\Details.cshtml" />
     <Content Include="Views\Events\Edit.cshtml" />
     <Content Include="Views\Events\Index.cshtml" />
+    <Content Include="Views\Roles\Create.cshtml" />
+    <Content Include="Views\Roles\Delete.cshtml" />
+    <Content Include="Views\Roles\Details.cshtml" />
+    <Content Include="Views\Roles\Edit.cshtml" />
+    <Content Include="Views\Roles\Index.cshtml" />
+    <Content Include="Views\Users\Create.cshtml" />
+    <Content Include="Views\Users\Delete.cshtml" />
+    <Content Include="Views\Users\Details.cshtml" />
+    <Content Include="Views\Users\Edit.cshtml" />
+    <Content Include="Views\Users\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -295,6 +316,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202301270455211_max-duration-4.resx">
       <DependentUpon>202301270455211_max-duration-4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202301312220120_AddingRoleModels.resx">
+      <DependentUpon>202301312220120_AddingRoleModels.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202301312233407_Roles.resx">
+      <DependentUpon>202301312233407_Roles.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
